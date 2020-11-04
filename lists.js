@@ -2,6 +2,8 @@
 
 let names = ["Bob", "Alice", "Dave", "Carol", "Jim"]
 
+let nums = [2, 1, 3, 4, 5, 6, 7, 8, 9]
+
 //console.log("Bob")
 
 //console.log("Alice")
@@ -19,8 +21,30 @@ function listNames () {
     }
 }
 
+function addEvenNums () {
+    let ans = 0
+    for (i = 0;i < nums.length;i ++) {
+        if (nums[i]%2 === 0) {
+            ans += nums[i]
+            //console.log("loop run")
+        }
+    }
+    console.log(ans)
+}
+
 listNames()
+
+addEvenNums()
 
 names.push("Sally")
 
+nums.push(11)
+nums.push(10)
+
 listNames()
+
+addEvenNums()
+
+names.forEach(function(num) {
+    console.log(num)
+})
