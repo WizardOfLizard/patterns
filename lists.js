@@ -48,3 +48,29 @@ addEvenNums()
 names.forEach(function(num) {
     console.log(num)
 })
+
+let nameLengths = names.map((name) => {
+    return name.length
+})
+
+console.log(nameLengths)
+
+let oddCount = 0
+
+nums.forEach((num) => {
+    if (num % 2 !== 0) {
+        oddCount ++
+    }
+})
+
+console.log(`There are ${oddCount} odd numbers in the list.`)
+
+let fifthNums = nums.filter((num) => {
+    if (num % 5 === 0) {
+        return true
+    } else {
+        return false
+    }
+})
+
+console.log(fifthNums)
